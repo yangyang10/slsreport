@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.aliyun.log.android)
+    api(libs.aliyun.log.android)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.gson)
 
@@ -52,7 +52,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.xiaotimel.sls.report"
             artifactId = "sls"
-            version = "0.0.1"
+            version = "0.0.2"
 
             afterEvaluate {
                 from(components["release"])
