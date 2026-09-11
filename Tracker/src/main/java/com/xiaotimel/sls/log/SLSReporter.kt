@@ -199,11 +199,11 @@ class SLSReporter private constructor(private val builder: Builder) {
         pageMonitorLogTask = PageMonitorLogTask(application)
         tasks += pageMonitorLogTask
         tasks += PingLogTask()
-        tasks += StabDetectLogTask()
+//        tasks += StabDetectLogTask()
         tasks += PublicDeviceInfoLogTask()
         tasks += PublicAnomalyDetectLogTask()
-        tasks += TouchEventLogTask()
-        tasks += HeartBeatLogTask()
+//        tasks += TouchEventLogTask()
+//        tasks += HeartBeatLogTask()
         tasks.forEach { it.initTask() }
     }
 
